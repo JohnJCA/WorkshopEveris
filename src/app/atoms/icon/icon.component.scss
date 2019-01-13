@@ -1,0 +1,27 @@
+.radius{
+    display: inline-block;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 5px rgba(27,31,35,.15);
+    display: flex;
+    justify-content: center;
+    height: 56px;
+    width: 56px;
+    img{
+        height: auto!important;
+        max-height: 55%!important;
+        max-width: 60%!important;
+    }
+}
+
+.simple{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin-right: 8px;
+    img{
+        width: 16px;
+        height: 16px;
+    }
+}

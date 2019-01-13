@@ -1,0 +1,13 @@
+:host{
+    display: flex;
+    align-items: center;
+}
+a{
+    font-size: 12px!important;
+    color: #0366d6;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+    text-decoration-line: underline;
+}

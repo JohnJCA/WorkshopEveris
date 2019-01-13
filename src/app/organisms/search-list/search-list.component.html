@@ -1,0 +1,30 @@
+<div class="search-list-container"
+(click)="onClick()" (blur)="onBlur()">
+
+    <app-input
+      [text]="text" 
+      placeholder="Search or jump to..."
+      (valueChange)="onValueChangued($event)">
+    </app-input>
+
+    <app-item *ngIf="text.length > 0"
+        [text]="text" 
+        [url]="getSearch()" 
+        [search]="true" 
+        buttonText="All GitHub">
+    </app-item>
+
+    <div class="list">
+        <ng-container *ngFor="let i of items">
+            <app-item *ngIf="getItems(i)" 
+                [text]="i" 
+                [search]="false"
+                [onhover]="focus" 
+                buttonText="Jump To" 
+                url="i">
+            </app-item>
+        </ng-container>
+    </div>
+
+</div>
+

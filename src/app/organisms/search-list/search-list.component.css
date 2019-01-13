@@ -1,0 +1,13 @@
+.search-list-container{
+    width: 300px;
+}
+.list{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top: 1px solid #d1d5da;
+    border-bottom: 1px solid #d1d5da;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+
+}

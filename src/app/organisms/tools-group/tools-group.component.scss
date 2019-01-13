@@ -1,0 +1,21 @@
+.container{
+    width: 703.003px;
+}
+.tittle-container{
+    display: flex;
+    justify-content: space-between;
+}
+.description-container{
+    margin-bottom: 24px;
+}
+.tools-group{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+.tool{
+    width: 50%;    
+    .child{
+        margin-bottom: 24px !important
+    }
+}

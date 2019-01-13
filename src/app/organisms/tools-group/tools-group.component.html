@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="tittle-container">
+        <app-tittle text="Apps with free trials" type="bold"></app-tittle>
+        <app-link text="View all"></app-link>
+    </div>
+    <div class="description-container">
+        <app-tittle text="Discover new ways to build better—now with a free 14-day trial." type="subtittle"></app-tittle>
+    </div>
+    <div class="tools-group">
+        <div class="tool">
+            <div *ngFor="let i of arr" class="child">
+                <app-tool tittle="Crowdin" description="Agile localization for your projects" ></app-tool>
+            </div>
+        </div>
+        <div class="tool">
+            <div *ngFor="let i of arr" class="child">
+                <app-tool tittle="Crowdin" description="Agile localization for your projects"></app-tool>
+            </div>
+        </div>
+
+
+    </div>
+    
+</div>
+
+
