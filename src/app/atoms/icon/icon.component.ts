@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class IconComponent implements OnInit {
 
-  @Input() public path: string = ''
+  @Input() public path: string = 'assets/img/github-icon.png'
   @Input() public type = "radius"
   
   constructor() { }

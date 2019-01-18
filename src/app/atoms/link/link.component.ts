@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LinkComponent implements OnInit {
   @Input() public text: string = 'Ver todo';
+  @Input() public url: string = 'Ver todo';
   constructor() { }
 
   ngOnInit() {

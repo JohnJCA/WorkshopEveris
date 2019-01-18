@@ -11,11 +11,8 @@
 .tools-group{
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
 }
 .tool{
-    width: 50%;    
-    .child{
-        margin-bottom: 24px !important
-    }
+    width: 50%;
+    margin-bottom: 24px !important
 }

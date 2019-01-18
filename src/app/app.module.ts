@@ -15,8 +15,10 @@ import { InputComponent } from './atoms/input/input.component';
 import { FormsModule } from '@angular/forms';
 import { SearchListComponent } from './organisms/search-list/search-list.component';
 import { ToolsgroupComponent } from './organisms/tools-group/tools-group.component';
-import { SuggestionsEndpoints } from './endpoints/suggestion.endpoints';
-import { FilterPipe } from '../pipes/filter.pipe';
+import { FilterPipe } from './commons/pipes/filter.pipe';
+import { SuggestionsEndpoints } from './commons/endpoints/suggestion.endpoints';
+import { ApplicationsGroupEndpoints } from './commons/endpoints/applications-group.endpoints';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +40,7 @@ import { FilterPipe } from '../pipes/filter.pipe';
     HttpClientModule,
     FormsModule
   ],
-  providers: [SuggestionsEndpoints],
+  providers: [SuggestionsEndpoints, ApplicationsGroupEndpoints],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

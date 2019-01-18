@@ -22,20 +22,22 @@ export class ItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  enter(){
+  enter(ev: Event){
     this.onhover = true;
     this.color = 'white';
+    ev.preventDefault();
   }
 
-  leave(){
+  leave(ev: Event){
     this.onhover = false;
     this.color = 'black';
+    ev.preventDefault();
   }
 
   clicked(ev: Event){
     this.itemClicked.emit(true);
     window.open(this.url, '_blank');
-    ev.stopPropagation();
+    ev.preventDefault();
   }
 
   onButtonClicked(){

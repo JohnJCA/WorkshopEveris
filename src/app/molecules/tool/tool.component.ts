@@ -9,6 +9,8 @@ export class ToolComponent implements OnInit {
   
   @Input() public tittle: string = 'Default';
   @Input() public description: string = 'Default';
+  @Input() public image: string = 'Default';
+
   constructor() { }
 
   ngOnInit() {

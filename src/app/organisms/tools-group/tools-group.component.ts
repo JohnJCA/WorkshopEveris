@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {  ApplicationsGroupEndpoints } from '../../commons/endpoints/applications-group.endpoints';
 
 @Component({
   selector: 'app-tools-group',
@@ -7,10 +8,13 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ToolsgroupComponent implements OnInit {
 
-  @Input() public arr = Array(4);
-  constructor() { }
+  public appsGroup;
+  constructor(private applicationsGroupEndpoints: ApplicationsGroupEndpoints) { }
 
   ngOnInit() {
+    this.applicationsGroupEndpoints.getApps().subscribe((response)=>{
+      this.appsGroup = response;
+    })
   }
 
 }

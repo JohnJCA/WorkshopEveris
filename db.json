@@ -30,18 +30,54 @@
         }
     ],
     
-    "companies": [{
-            "id": 1,
-            "name": "Microsoft"
-        },
-        {
-            "id": 2,
-            "name": "Facebook"
-        },
-        {
-            "id": 3,
-            "name": "Amazon"
-        }
-    ]
+    "applicationsGroup": 
+    {
+        "title": "Apps with free trials",
+        "description": "Discover new ways to build better—now with a free 14-day trial.",
+        "seeMoreUrl": "https://github.com/marketplace/free-trials",
+        "available": [
+            {
+                "title": "Sider",
+                "appDescription": "Detect anti-pattern instances and apply project best practices in your pull requests automatically. Easy and quick setup",
+                "image": "https://avatars2.githubusercontent.com/ml/475?s=62&v=4"
+            },
+            {
+                "title": "Hound",
+                "appDescription": "Automated code reviews",
+                "image": "https://avatars1.githubusercontent.com/ml/506?s=62&v=4"
+                
+            },
+            {
+                "title": "Cloud 66 Skycap",
+                "appDescription": "Skycap is a container native CI/CD tool",
+                "image": "https://avatars2.githubusercontent.com/ml/491?s=62&v=4"
+            },
+            {
+                "title": "Dependabot",
+                "appDescription": "Automated dependency updates for Ruby, JavaScript, Python, Go, PHP, Elixir, Rust, Java and .NET",
+                "image": "https://avatars3.githubusercontent.com/ml/211?s=62&v=4"
+            },
+            {
+                "title": "POEditor",
+                "appDescription": "Manage your software localization collaboratively",
+                "image": "https://avatars2.githubusercontent.com/ml/216?s=62&v=4"
+            },
+            {
+                "title": "Crowdin",
+                "appDescription": "Agile localization for your projects",
+                "image": "https://avatars2.githubusercontent.com/ml/315?s=62&v=4"
+            },
+            {
+                "title": "Travis CI",
+                "appDescription": "Test and deploy with confidence",
+                "image": "https://avatars0.githubusercontent.com/ml/4?s=62&v=4"
+            },
+            {
+                "title": "Buddy",
+                "appDescription": "One-click delivery automation for Web Developers",
+                "image": "https://avatars3.githubusercontent.com/ml/248?s=62&v=4"
+            }
+        ]
+    }  
 
 }

@@ -37,13 +37,10 @@ export class SearchListComponent implements OnInit {
   }
 
   ngOnChanges(changes: SimpleChanges){
-    console.log("this.inputBlured",this.inputBlured);
-    console.log("this.organismClicked",this.organismClicked);
     this.showList = (this.organismClicked && !this.inputBlured)? true : false;
   }
 
   onInputBlured(ev: boolean){
-    console.log("this.inputBlured",this.inputBlured);
     this.inputBlured = ev;
     this.cd.detectChanges();
   }
@@ -56,7 +53,6 @@ export class SearchListComponent implements OnInit {
     }
   }
   getSearch(){
-    console.log("getSearch");
     let text = this.text.replace(' ', '+');
     return 'https://github.com/search?q='+text 
   }
