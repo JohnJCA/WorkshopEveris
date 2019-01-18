@@ -1,29 +1,34 @@
 <div class="search-list-container"
-(click)="onClick()" (blur)="onBlur()">
+(click)="onClick()">
 
     <app-input
       [text]="text" 
       placeholder="Search or jump to..."
-      (valueChange)="onValueChangued($event)">
+      (valueChange)="onValueChangued($event)"
+      (inputBlur)="onInputBlured($event)"
+      [organismClicked]="organismClicked"
+      [showList]="showList"
+      >
     </app-input>
+    <div *ngIf="text.length > 0 && showList">
+        <app-item
+            [text]="text" 
+            [url]="getSearch()" 
+            [search]="true" 
+            buttonText="All GitHub">
+        </app-item>
+    </div>
 
-    <app-item *ngIf="text.length > 0"
-        [text]="text" 
-        [url]="getSearch()" 
-        [search]="true" 
-        buttonText="All GitHub">
-    </app-item>
 
-    <div class="list">
-        <ng-container *ngFor="let i of items">
-            <app-item *ngIf="getItems(i)" 
-                [text]="i" 
+    <div *ngIf="showList" class="list">
+        <div *ngFor="let i of items | pipeFilter: text">
+            <app-item
+                [text]="i.name" 
                 [search]="false"
-                [onhover]="focus" 
                 buttonText="Jump To" 
-                url="i">
+                [url]="i.url">
             </app-item>
-        </ng-container>
+        </div>
     </div>
 
 </div>

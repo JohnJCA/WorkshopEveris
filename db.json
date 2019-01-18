@@ -1,19 +1,47 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    "suggestions": [
+        {
+            "name":"typicode/json-server", 
+            "url":"https://github.com/typicode/json-server"
+        },
+        {
+            "name":"angular/angular",
+            "url":"https://github.com/angular/angular"
+        },
+        {
+            "name":"npm/npm",
+            "url":"https://github.com/npm/npm"
+        },
+        {
+            "name":"facebook/react",
+            "url":"https://github.com/facebook/react"
+        },
+        {
+            "name":"ionic-team/stencil",
+            "url":"https://github.com/ionic-team/stencil"
+        },
+        {
+            "name":"reactphp/react",
+            "url":"https://github.com/reactphp/react"
+        },
+        {
+            "name":"Polymer/polymer",
+            "url":"https://github.com/Polymer/polymer"
+        }
+    ],
+    
+    "companies": [{
+            "id": 1,
+            "name": "Microsoft"
+        },
+        {
+            "id": 2,
+            "name": "Facebook"
+        },
+        {
+            "id": 3,
+            "name": "Amazon"
+        }
+    ]
+
 }

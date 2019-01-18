@@ -1,21 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { ResultsEndpoints } from '../../endpoints/results.endpoints';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tools-group',
   templateUrl: './tools-group.component.html',
   styleUrls: ['./tools-group.component.scss'],
-  providers: [ResultsEndpoints]
 })
 export class ToolsgroupComponent implements OnInit {
 
-  public arr = [1,1,1]
-  constructor( private resultendpoints: ResultsEndpoints) { }
+  @Input() public arr = Array(4);
+  constructor() { }
 
   ngOnInit() {
-    this.resultendpoints.getResults().subscribe((result)=>{
-      console.log(result)
-    })
   }
 
 }

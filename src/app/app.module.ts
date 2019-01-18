@@ -8,13 +8,15 @@ import { TittleComponent } from './atoms/tittle/tittle.component';
 import { ButtonComponent } from './atoms/button/button.component';
 import { ToolComponent } from './molecules/tool/tool.component';
 import { LinkComponent } from './atoms/link/link.component';
-import { ResultsEndpoints } from './endpoints/results.endpoints';
+
 import { IconComponent } from './atoms/icon/icon.component';
 import { ItemComponent } from './molecules/item/item.component';
 import { InputComponent } from './atoms/input/input.component';
 import { FormsModule } from '@angular/forms';
 import { SearchListComponent } from './organisms/search-list/search-list.component';
 import { ToolsgroupComponent } from './organisms/tools-group/tools-group.component';
+import { SuggestionsEndpoints } from './endpoints/suggestion.endpoints';
+import { FilterPipe } from '../pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -28,14 +30,15 @@ import { ToolsgroupComponent } from './organisms/tools-group/tools-group.compone
     LinkComponent,
     ItemComponent,
     InputComponent,
-    SearchListComponent
+    SearchListComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule
   ],
-  providers: [ResultsEndpoints],
+  providers: [SuggestionsEndpoints],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

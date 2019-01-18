@@ -10,8 +10,8 @@ export class ItemComponent implements OnInit {
   @Input() public text: string = '';
   @Input() public url: string = '';
   @Input() public buttonText: string = 'Jump to';
-  @Input() public onhover: boolean;
   @Input() public search: boolean = false;
+  public onhover: boolean;
   @Output() public itemClicked: EventEmitter<boolean> = new EventEmitter();
 
   public color: string = 'black';
@@ -21,18 +21,24 @@ export class ItemComponent implements OnInit {
 
   ngOnInit() {
   }
-  mouseEnter(){
+
+  enter(){
     this.onhover = true;
     this.color = 'white';
   }
 
-  mouseLeave(){
+  leave(){
     this.onhover = false;
     this.color = 'black';
   }
 
-  clicked(){
-    console.log(this.url)
+  clicked(ev: Event){
+    this.itemClicked.emit(true);
+    window.open(this.url, '_blank');
+    ev.stopPropagation();
+  }
+
+  onButtonClicked(){
     this.itemClicked.emit(true);
     window.open(this.url, '_blank');
   }

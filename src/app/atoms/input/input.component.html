@@ -2,8 +2,9 @@
     <input type="text"
       (input)="textChangued($event)"
       [placeholder]="placeholder"
-      (focus)="onFocus()"
-      (blur)="onBlur()">
+      (focus)="onFocus($event)"
+      (keydown.Tab)="onKey($event)"
+      (blur)="onBlur($event)">
       <div class="slash-container">
         <img src="assets/img/slash.png">
       </div>  

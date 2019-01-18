@@ -1,5 +1,7 @@
 .search-list-container{
+    position: relative;
     width: 300px;
+    display: inline-block;
 }
 .list{
     border-bottom-left-radius: 3px;

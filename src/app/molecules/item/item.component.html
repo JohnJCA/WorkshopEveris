@@ -1,25 +1,21 @@
-<div (click)="clicked()">
-    <li (mouseenter) ="mouseEnter($event)"  (mouseleave)="mouseLeave($event)">
+<div (click)="clicked($event)">
+    <li (mouseleave)="leave($event)" (mouseenter)="enter($event)">
         <div *ngIf="!search">
-            <div>
-                <app-icon *ngIf="!onhover"  path="assets/img/repository.png" type="simple"></app-icon>
-            </div>
-            <div>
+            <div class="repo">
+                <app-icon *ngIf="!onhover" path="assets/img/repository.png" type="simple"></app-icon>
                 <app-icon *ngIf="onhover" path="assets/img/repository-white.png" type="simple"></app-icon>
             </div>
             <app-pharagraph [color]="color" [text]="text" type="normal" text="typicode/json-server"></app-pharagraph>
         </div>
         <div *ngIf="search">
-            <div>
-                <app-icon *ngIf="!onhover"  path="assets/img/search-black.png" type="simple"></app-icon>
-            </div>
-            <div>
+            <div class="search">
+                <app-icon *ngIf="!onhover" path="assets/img/search-black.png" type="simple"></app-icon>
                 <app-icon *ngIf="onhover" path="assets/img/search-white.png" type="simple"></app-icon>
             </div>
             <app-pharagraph [color]="color" [text]="text" type="normal" text="typicode/json-server"></app-pharagraph>
             </div>
         <div>
-            <app-button [text]="buttonText" type="little"></app-button>
+            <app-button [text]="buttonText" type="little" (buttonClicked)="onButtonClicked()"></app-button>
         </div>
     </li>
 </div>

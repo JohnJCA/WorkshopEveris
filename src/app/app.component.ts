@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  organismClicked: boolean = false;
+
+  appClicked(ev: any){
+      let arrayOfElementsTag = ev.path.map((ele)=>ele.tagName)
+      arrayOfElementsTag.indexOf("APP-SEARCH-LIST") != -1 ? this.organismClicked = true:  this.organismClicked = false;
+  }
+
 }
