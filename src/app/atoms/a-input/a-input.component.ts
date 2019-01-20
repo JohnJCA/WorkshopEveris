@@ -1,10 +1,10 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 @Component({
-  selector: 'app-input',
-  templateUrl: './input.component.html',
-  styleUrls: ['./input.component.scss'],
+  selector: 'a-input',
+  templateUrl: './a-input.component.html',
+  styleUrls: ['./a-input.component.scss'],
 })
-export class InputComponent implements OnInit {
+export class AInputComponent implements OnInit {
 
   @Input() public text: string = '';
   @Input() public placeholder: string = 'Placeholder';

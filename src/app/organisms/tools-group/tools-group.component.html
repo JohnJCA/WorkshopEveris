@@ -1,12 +1,12 @@
 <div *ngIf="appsGroup" class="container">
 
     <div class="tittle-container">
-        <app-tittle [text]="appsGroup.title" type="bold"></app-tittle>
-        <app-link text="View all" [url]="appsGroup.seeMoreUrl"></app-link>
+        <a-tittle [text]="appsGroup.title" type="bold"></a-tittle>
+        <a-link text="View all" [url]="appsGroup.seeMoreUrl"></a-link>
     </div>
 
     <div class="description-container">
-        <app-tittle [text]="appsGroup.description" type="subtittle"></app-tittle>
+        <a-tittle [text]="appsGroup.description" type="subtittle"></a-tittle>
     </div>
 
     <div class="tools-group">        
@@ -20,5 +20,3 @@
     </div>
     
 </div>
-
-

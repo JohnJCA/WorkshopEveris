@@ -1,7 +1,7 @@
 <div class="search-list-container"
 (click)="onClick()">
 
-    <app-input
+    <a-input
       [text]="text" 
       placeholder="Search or jump to..."
       (valueChange)="onValueChangued($event)"
@@ -9,7 +9,7 @@
       [organismClicked]="organismClicked"
       [showList]="showList"
       >
-    </app-input>
+    </a-input>
     <div *ngIf="text.length > 0 && showList">
         <app-item
             [text]="text" 

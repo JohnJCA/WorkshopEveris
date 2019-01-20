@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-pharagraph',
-  templateUrl: './pharagraph.component.html',
-  styleUrls: ['./pharagraph.component.scss']
+  selector: 'a-pharagraph',
+  templateUrl: './a-pharagraph.component.html',
+  styleUrls: ['./a-pharagraph.component.scss']
 })
-export class PharagraphComponent implements OnInit {
+export class APharagraphComponent implements OnInit {
 
   @Input() public text: string = 'Tittle'
   @Input() public type: string = 'menu';

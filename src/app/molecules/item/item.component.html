@@ -2,20 +2,20 @@
     <li (mouseleave)="leave($event)" (mouseenter)="enter($event)">
         <div *ngIf="!search">
             <div class="repo">
-                <app-icon *ngIf="!onhover" path="assets/img/repository.png" type="simple"></app-icon>
-                <app-icon *ngIf="onhover" path="assets/img/repository-white.png" type="simple"></app-icon>
+                <a-icon *ngIf="!onhover" path="assets/img/repository.png" type="simple"></a-icon>
+                <a-icon *ngIf="onhover" path="assets/img/repository-white.png" type="simple"></a-icon>
             </div>
-            <app-pharagraph [color]="color" [text]="text" type="normal" text="typicode/json-server"></app-pharagraph>
+            <a-pharagraph [color]="color" [text]="text" type="normal" text="typicode/json-server"></a-pharagraph>
         </div>
         <div *ngIf="search">
             <div class="search">
-                <app-icon *ngIf="!onhover" path="assets/img/search-black.png" type="simple"></app-icon>
-                <app-icon *ngIf="onhover" path="assets/img/search-white.png" type="simple"></app-icon>
+                <a-icon *ngIf="!onhover" path="assets/img/search-black.png" type="simple"></a-icon>
+                <a-icon *ngIf="onhover" path="assets/img/search-white.png" type="simple"></a-icon>
             </div>
-            <app-pharagraph [color]="color" [text]="text" type="normal" text="typicode/json-server"></app-pharagraph>
+            <a-pharagraph [color]="color" [text]="text" type="normal" text="typicode/json-server"></a-pharagraph>
             </div>
         <div>
-            <app-button [text]="buttonText" type="little" (buttonClicked)="onButtonClicked()"></app-button>
+            <a-button [text]="buttonText" type="little" (buttonClicked)="onButtonClicked()"></a-button>
         </div>
     </li>
 </div>

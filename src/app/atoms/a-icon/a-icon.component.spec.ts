@@ -1,20 +1,21 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { AIconComponent } from './a-icon.component';
 
-import { LinkComponent } from './link.component';
 
-describe('LinkComponent', () => {
-  let component: LinkComponent;
-  let fixture: ComponentFixture<LinkComponent>;
+
+describe('AIconComponent', () => {
+  let component: AIconComponent;
+  let fixture: ComponentFixture<AIconComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LinkComponent ]
+      declarations: [ AIconComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LinkComponent);
+    fixture = TestBed.createComponent(AIconComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

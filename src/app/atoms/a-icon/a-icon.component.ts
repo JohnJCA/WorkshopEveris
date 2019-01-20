@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-icon',
-  templateUrl: './icon.component.html',
-  styleUrls: ['./icon.component.scss']
+  selector: 'a-icon',
+  templateUrl: './a-icon.component.html',
+  styleUrls: ['./a-icon.component.scss']
 })
-export class IconComponent implements OnInit {
+export class AIconComponent implements OnInit {
 
   @Input() public path: string = 'assets/img/github-icon.png'
   @Input() public type = "radius"
