@@ -1,21 +1,21 @@
 <div *ngIf="appsGroup" class="container">
 
     <div class="tittle-container">
-        <a-tittle [text]="appsGroup.title" type="bold"></a-tittle>
+        <a-title [text]="appsGroup.title" type="bold"></a-title>
         <a-link text="View all" [url]="appsGroup.seeMoreUrl"></a-link>
     </div>
 
     <div class="description-container">
-        <a-tittle [text]="appsGroup.description" type="subtittle"></a-tittle>
+        <a-title [text]="appsGroup.description" type="subtittle"></a-title>
     </div>
 
     <div class="tools-group">        
         <div *ngFor="let app of appsGroup.available" class="tool">
-            <app-tool 
+            <m-app 
                 [tittle]="app.title" 
                 [description]="app.appDescription" 
                 [image]="app.image">
-            </app-tool>
+            </m-app>
         </div>
     </div>
     

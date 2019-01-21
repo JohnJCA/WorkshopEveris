@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-tool',
-  templateUrl: './tool.component.html',
-  styleUrls: ['./tool.component.css']
+  selector: 'm-app',
+  templateUrl: './m-app.component.html',
+  styleUrls: ['./m-app.component.scss']
 })
-export class ToolComponent implements OnInit {
+export class MAppComponent implements OnInit {
   
   @Input() public tittle: string = 'Default';
   @Input() public description: string = 'Default';

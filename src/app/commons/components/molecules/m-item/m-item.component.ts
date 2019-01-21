@@ -1,11 +1,11 @@
 import { Component, OnInit, Input, EventEmitter, Output, ChangeDetectorRef } from '@angular/core';
 
 @Component({
-  selector: 'app-item',
-  templateUrl: './item.component.html',
-  styleUrls: ['./item.component.scss']
+  selector: 'm-item',
+  templateUrl: './m-item.component.html',
+  styleUrls: ['./m-item.component.scss']
 })
-export class ItemComponent implements OnInit {
+export class MItemComponent implements OnInit {
 
   @Input() public text: string = '';
   @Input() public url: string = '';

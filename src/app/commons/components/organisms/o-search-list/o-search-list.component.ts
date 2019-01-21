@@ -1,13 +1,13 @@
 import { Component, OnInit, Input, SimpleChanges, ChangeDetectorRef } from '@angular/core';
-import { SuggestionsEndpoints } from '../../commons/endpoints/suggestion.endpoints';
-import { FilterPipe } from '../../commons/pipes/filter.pipe';
+import { SuggestionsEndpoints } from 'src/app/commons/endpoints/suggestion.endpoints';
+import { FilterPipe } from 'src/app/commons/pipes/filter.pipe';
+
 @Component({
-  selector: 'app-search-list',
-  templateUrl: './search-list.component.html',
-  styleUrls: ['./search-list.component.css'],
-  providers:[FilterPipe]
+  selector: 'o-search-list',
+  templateUrl: './o-search-list.component.html',
+  styleUrls: ['./o-search-list.component.scss'],
 })
-export class SearchListComponent implements OnInit {
+export class OSearchListComponent implements OnInit {
 
   @Input() organismClicked: boolean = false;
 
@@ -18,6 +18,7 @@ export class SearchListComponent implements OnInit {
   public showList: boolean = false;
   
   constructor(private suggestionendpoints: SuggestionsEndpoints,
+    private filterPipe: FilterPipe,
     private cd: ChangeDetectorRef) { }
 
   ngOnInit() {

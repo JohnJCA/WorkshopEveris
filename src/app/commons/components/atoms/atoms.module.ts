@@ -24,6 +24,7 @@ import { ATitleModule } from './a-title/a-title.module';
     APharagraphModule,
     ALinkModule,
     AInputModule,
-    AButtonModule ]
+    AButtonModule 
+  ]
 })
 export class AtomsModule { }

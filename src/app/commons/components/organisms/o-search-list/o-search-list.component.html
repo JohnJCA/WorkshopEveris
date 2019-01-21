@@ -11,23 +11,23 @@
       >
     </a-input>
     <div *ngIf="text.length > 0 && showList">
-        <app-item
+        <m-item
             [text]="text" 
             [url]="getSearch()" 
             [search]="true" 
             buttonText="All GitHub">
-        </app-item>
+        </m-item>
     </div>
 
 
     <div *ngIf="showList" class="list">
-        <div *ngFor="let i of items | pipeFilter: text">
-            <app-item
+        <div *ngFor="let i of items | filterPipe: text">
+            <m-item
                 [text]="i.name" 
                 [search]="false"
                 buttonText="Jump To" 
                 [url]="i.url">
-            </app-item>
+            </m-item>
         </div>
     </div>
 

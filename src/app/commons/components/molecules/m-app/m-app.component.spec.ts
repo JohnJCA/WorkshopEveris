@@ -1,20 +1,21 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MAppComponent } from './m-app.component';
 
-import { SearchListComponent } from './search-list.component';
 
-describe('SearchListComponent', () => {
-  let component: SearchListComponent;
-  let fixture: ComponentFixture<SearchListComponent>;
+
+describe('MAppComponent', () => {
+  let component: MAppComponent;
+  let fixture: ComponentFixture<MAppComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SearchListComponent ]
+      declarations: [ MAppComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SearchListComponent);
+    fixture = TestBed.createComponent(MAppComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
