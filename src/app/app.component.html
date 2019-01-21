@@ -1,6 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div (click)="appClicked($event)">    
   <div style="margin-left: 15px">
+    <div style="display: flex; justify-content: space-between; align-items: center">
+      <h1></h1>
+      <img src="assets/img/everis-logo.jpg">
+    </div>
     <br>
     <h1>Átomos:</h1>
     <br>
@@ -41,7 +45,7 @@
     <h1>Organismos:</h1>
     <o-apps-group></o-apps-group>
     <br>
-    <o-search-list  [organismClicked]="organismClicked"></o-search-list>
+    <o-search-list [organismClicked]="organismClicked"></o-search-list>
     <br>
     <br>
   </div>      
